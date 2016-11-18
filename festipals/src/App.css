@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.thisthing {
+  text-align: center;
+  color:#800080;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
