@@ -1,0 +1,19 @@
+﻿@charset "utf-8";
+
+html
+{
+    height:100%;
+    margin:0px; 
+    padding:0px;
+}
+
+body
+{
+    min-height:100%; 
+    position:relative;
+    margin:0px; 
+    padding:0px;
+    background-color: #E0BF6E;
+    background-image: url('../img/background.jpg');
+}
+
