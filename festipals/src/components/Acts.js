@@ -25,7 +25,7 @@ export default class Acts extends Component {
               </div>
             </div>
             {alreadyAdded
-              ? <a href="#" type="button" className="btn btn-default col-xs-12">
+              ? <a type="button" className="btn btn-default col-xs-12">
                 <span className="glyphicon glyphicon-plus"></span> Add to my acts
               </a>
               : null
