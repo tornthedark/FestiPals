@@ -28,3 +28,7 @@ h1 {
   margin-top:20px;
   font-size: 24px;
 }
+
+a.active, a.active:active, a.active:hover, a.active:focus {
+  background-color: black !important;
+}

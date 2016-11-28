@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
@@ -14,7 +14,7 @@ import ProfilePage from './components/ProfilePage';
 import SchedulePage from './components/SchedulePage';
 
 ReactDOM.render(
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path='/' component={Layout}>
       <IndexRoute component={SchedulePage}></IndexRoute>
       <Route path="acts" component={ActsPage}></Route>
