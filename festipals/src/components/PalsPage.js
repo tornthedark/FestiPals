@@ -8,7 +8,9 @@ export default class PalsPage extends Component {
       <PageHeader icon="fa fa-users" title="Pals" description="(More information about your pals)"/>
         <div className="container">
           <h1>Your Pals</h1>
-          </div>
+          <p>Click on a Pal&rsquo;s name to see his or her personal schedule</p>
+          <Pals />
+        </div>
       </div>
     );
   }
