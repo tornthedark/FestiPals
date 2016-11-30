@@ -9,6 +9,10 @@ h1 {
   color: #ED7303;
 }
 
+p {
+  color:#ffffff;
+}
+
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0;
