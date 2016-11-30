@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PageHeader from './PageHeader.js';
 import Acts from './Acts.js';
 import SampleData from './../sampleData.json'
 
@@ -16,6 +17,7 @@ export default class SchedulePage extends Component {
 
     return (
       <div>
+      <PageHeader icon="fa fa-calendar" title="Schedule" description="(More information about your schedule)"/>
         <div className="container">
           <h1><span className="glyphicon glyphicon-music" aria-hidden="true"></span> My schedule</h1>
           <p>(Click on an act to see more details)</p>

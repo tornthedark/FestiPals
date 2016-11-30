@@ -17,12 +17,12 @@ export default class Navbar extends Component {
           </div>
           <div className="collapse navbar-collapse" id="collapsing-navbar">
             <ul className="nav navbar-nav">
-              <li><IndexLink to="/" activeClassName="active">My Schedule</IndexLink></li>
-              <li><Link to="pals" activeClassName="active">Pals</Link></li>
-              <li><Link to="acts" activeClassName="active">Acts</Link></li>
+              <li><IndexLink to="/" activeClassName="active"><span className="fa fa-calendar"></span> My Schedule</IndexLink></li>
+              <li><Link to="pals" activeClassName="active"><span className="fa fa-users"></span> Pals</Link></li>
+              <li><Link to="acts" activeClassName="active"><span className="fa fa-music"></span> Acts</Link></li>
               <li className="divider" activeClassName="active"></li>
-              <li><Link to="profile" activeClassName="active">Profile</Link></li>
-              <li><Link to="home" activeClassName="active">Log Out</Link></li>
+              <li><Link to="profile" activeClassName="active"><span className="fa fa-user"></span> Profile</Link></li>
+              <li><Link to="home" activeClassName="active"><span className="fa fa-sign-out"></span> Log Out</Link></li>
             </ul>
           </div>
         </div>

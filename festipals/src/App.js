@@ -1,21 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {StyleSheet, Dimensions, PixelRatio} from "react-native";
+const {width, height, scale} = Dimensions.get("window"),
+    vw = width / 100,
+    vh = height / 100,
+    vmin = Math.min(vw, vh),
+    vmax = Math.max(vw, vh);
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
-
-export default App;
+export default StyleSheet.create({
+    "App": {
+        "textAlign": "center"
+    },
+    "App-logo": {
+        "animation": "App-logo-spin infinite 20s linear",
+        "height": 80
+    },
+    "App-header": {
+        "backgroundColor": "#222",
+        "height": 150,
+        "paddingTop": 20,
+        "paddingRight": 20,
+        "paddingBottom": 20,
+        "paddingLeft": 20,
+        "Color": "white"
+    },
+    "App-intro": {
+        "fontSize": "large"
+    }
+});
