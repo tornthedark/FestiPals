@@ -32,8 +32,3 @@ h1 {
 a.active, a.active:active, a.active:hover, a.active:focus {
   background-color: black !important;
 }
-
-.panel {
-  padding-top: 0;
-  padding-bottom: 0;
-}
