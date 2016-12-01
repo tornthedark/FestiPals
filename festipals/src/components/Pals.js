@@ -14,7 +14,7 @@ export default class Pals extends Component {
           </div>
           <div className="col-xs-9">
             <h3> Friend&rsquo;s Name</h3>
-            <p> common acts</p>
+            <p># common acts</p>
           </div>
         </div>
       </div>

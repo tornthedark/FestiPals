@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PageHeader from './PageHeader.js';
-import Pals from './Pals.js';
 
 export default class PalsPage extends Component {
   render() {
