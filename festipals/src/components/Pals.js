@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SampleData from './../sampleData.json';
 
 export default class Pals extends Component {
 
