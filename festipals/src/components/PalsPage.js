@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import Pals from './Pals.js';
 import PageHeader from './PageHeader.js';
+import SamplePals from './../samplePals.json';
 
 export default class PalsPage extends Component {
   render() {
@@ -7,9 +9,8 @@ export default class PalsPage extends Component {
       <div>
       <PageHeader icon="fa fa-users" title="Pals" description="(More information about your pals)"/>
         <div className="container">
-          <h1>Your Pals</h1>
-          <p>Click on a Pal&rsquo;s name to see his or her personal schedule</p>
-          <Pals />
+        {/*} looping through all the pals in the sample data file array to display the pals */}
+          {SamplePals.pals.map(function (pal) { return <Pals key={pal._id} id={pal._id} allPals={SamplePals} firstName={pal.first_name} lastName={pal.last_name} email={pal.e_mail} /> }) }
         </div>
       </div>
     );
