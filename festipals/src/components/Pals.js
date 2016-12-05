@@ -9,15 +9,12 @@ export default class Pals extends Component {
       <div>
         <div className="panel panel-default">
           <div className="panel-body">
-            <div className="col-xs-3 palIcon">
-              <span className="fa fa-user fa-3x"></span>
+            <div className="col-xs-3 col-sm-1 palIcon">
+              <span className="fa fa-user fa-2x"></span>
             </div>
-            <div className="col-xs-9">
-              <h3>{firstName} {lastName}</h3>
-              <h4>{email}</h4>
-
-
-
+            <div className="col-xs-9 col-sm-11">
+              <h4>{firstName} {lastName}</h4>
+              <p>{email}</p>
             </div>
           </div>
         </div>
