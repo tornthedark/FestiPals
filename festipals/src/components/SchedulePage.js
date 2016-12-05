@@ -13,6 +13,7 @@ export default class SchedulePage extends Component {
 
       }
     }
+    var attendingPals = ['pal1', 'pal2']; // TO DO: add logic for attending pals here; look through the users pals and select the ones that have this acts {id} in their list of acts.
 
     return (
       <div>
@@ -21,8 +22,19 @@ export default class SchedulePage extends Component {
           <p>(Click on an act to see more details)</p>
         </div>
         <div className="container">
-        {/*} looping through all the acts in the sample data file array to display the acts */}
-          {scheduledActs.map(function (act) { return <Acts key={act._id} id={act._id} stage={act.stage} allActs={scheduledActs} name={act.title} startTime={act.starts.t} date={act.starts.d} /> }) }
+        {/* looping through all the acts in the sample data file array to display the acts */}
+          {scheduledActs.map(function (act) { return <Acts
+                                                        key={act._id}
+                                                        id={act._id}
+                                                        stage={act.stage}
+                                                        name={act.title}
+                                                        startTime={act.starts.t}
+                                                        endTime={act.ends.t}
+                                                        country={act.country}
+                                                        date={act.starts.d}
+                                                        desc={act.desc}
+                                                        attendingPals={attendingPals}
+                                                      /> }) }
         </div>
       </div>
     );
