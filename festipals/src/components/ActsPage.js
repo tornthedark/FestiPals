@@ -20,7 +20,7 @@ export default class ActsPage extends Component {
                                                         endTime={act.ends.t}
                                                         country={act.country}
                                                         date={act.starts.d}
-                                                        desc={act.desc}
+                                                        description={act.description}
                                                         attendingPals={attendingPals}
                                                       /> }) }
         </div>

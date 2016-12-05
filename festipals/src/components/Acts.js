@@ -7,7 +7,7 @@ export default class Acts extends Component {
 
   render() {
     const addedActs = SampleData.user.acts;
-    const { name, startTime, id, stage, date, endTime, country, desc, attendingPals } = this.props;
+    const { name, startTime, id, stage, date, endTime, country, description, attendingPals } = this.props;
     var alreadyAdded = addedActs.indexOf(id) > -1;
 
     return (
@@ -48,7 +48,7 @@ export default class Acts extends Component {
                 <p><strong>{startTime} - {endTime}</strong></p>
                 <img className="img-responsive" alt="band-portrait" src="http://placehold.it/2000x500"/> {/* TO DO: insert img here */}
                 <br />
-                <p>{desc}</p>
+                <p>{description}</p>
                 {alreadyAdded
                   ? <a type="button" className="btn btn-default col-xs-12">
                     <span className="glyphicon glyphicon-plus"></span> Add to my acts
