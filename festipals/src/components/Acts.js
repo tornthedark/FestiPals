@@ -46,10 +46,8 @@ export default class Acts extends Component {
               <div className="modal-body">
                 <p>{date}</p>
                 <p><strong>{startTime} - {endTime}</strong></p>
-                <div className="">
-                  <img className="img-responsive" alt="band-portrait" src="http://placehold.it/2000x500"/> {/* TO DO: insert img here */}
-                </div>
-                  <br />
+                <img className="img-responsive" alt="band-portrait" src="http://placehold.it/2000x500"/> {/* TO DO: insert img here */}
+                <br />
                 <p>{desc}</p>
                 {alreadyAdded
                   ? <a type="button" className="btn btn-default col-xs-12">
