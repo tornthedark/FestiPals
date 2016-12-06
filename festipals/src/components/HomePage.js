@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/HomePage.css';
 import logo from '../img/roskildelogo.png';
-import  Link  from 'react-router';
+import { Link } from 'react-router';
 
 export default class HomePage extends Component {
   render() {
@@ -49,7 +49,7 @@ export default class HomePage extends Component {
                     <div className="row">
                         <div className="col-xs-12 col-sm-6 col-md-offset-3">
                                 <h1>What is Festipals?</h1>
-                                <p>This is the website where you can make your own schedule for the Roskilde Festival. It helps you make your own timeschedule and see the concerts your friends are attending. Don't miss any of your acts.</p>
+                                <p>This is the website where you can make your own schedule for the Roskilde Festival. It helps you make your own timeschedule and see the concerts your friends are attending. Don&rsquo;t miss any of your acts.</p>
                         </div>
                     </div>
             </div>
