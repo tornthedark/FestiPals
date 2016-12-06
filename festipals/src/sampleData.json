@@ -3,8 +3,8 @@
     {
       "_id": "abcdefgh",
       "title": "Slayer",
-      "starts": {"d": "01-06-2017", "t": "13:45:00"},
-      "ends": {"d": "01-06-2017", "t": "14:30:00"},
+      "starts": {"d": "01-06-2017", "t": "13:45"},
+      "ends": {"d": "01-06-2017", "t": "14:30"},
       "stage": 1,
       "description": "Very long description of the band",
       "country": "US",
