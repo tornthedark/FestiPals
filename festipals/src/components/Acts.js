@@ -24,12 +24,12 @@ export default class Acts extends Component {
               </div>
               <div className="col-xs-3 palIcon">
                 <div className="pull-right">
-                  <span className="glyphicon glyphicon-user"></span> {attendingPals.length}
+                  <i className="fa fa-users"></i> {attendingPals.length}
                 </div>
               </div>
               {alreadyAdded
                 ? <a type="button" className="btn btn-default col-xs-12">
-                  <span className="glyphicon glyphicon-plus"></span> Add to my acts
+                  <i className="fa fa-plus"></i> Add to my acts
                 </a>
                 : null
               }
