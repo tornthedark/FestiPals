@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/HomePage.css';
 import logo from '../img/roskildelogo.png';
-import { Link, IndexLink } from 'react-router';
+import  Link  from 'react-router';
 
 export default class HomePage extends Component {
   render() {
