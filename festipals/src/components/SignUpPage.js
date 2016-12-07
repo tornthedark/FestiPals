@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
+import PageHeader from './PageHeader.js';
 import { Link } from 'react-router';
 
-export default class HomePage extends Component {
+export default class SignUpPage extends Component {
   render() {
 
       return (
           <div>
-              <div className="container-fluid">
-                  <div className="page-header">
-                    <div className="container text-center">
-                            <h1>Sign up</h1>
-                    </div>
-                  </div>
-              </div>
+              <PageHeader icon="fa fa-users" title="Sign Up"/>
 
               <div className="container">
                       <div className="row">
@@ -27,7 +22,6 @@ export default class HomePage extends Component {
                        <div className="row">
                            <div className="col-xs-12 col-sm-6 col-md-offset-2">
                              <form>
-
                                       <div className="form-group">
                                         <label for="inputFirstName">First Name</label>
                                         <input type="email" className="form-control" id="inputFirstName" placeholder="fx. Mads"></input>
@@ -52,16 +46,13 @@ export default class HomePage extends Component {
                                          <label for="checkboxRobot">I am not a Robot</label>
                                          <input type="checkbox" className="form-control" id="checkboxRobot"></input>
                                        </div>
-
                                     <Link to="acts"><button type="button" className="btn btn-primary btn-lg btn-block"> Sign Up</button></Link>
-
                               </form>
-
                           </div>
                     </div>
              </div>
 
-          </div>
+      </div>
       )
     }
   }
