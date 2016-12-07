@@ -46,11 +46,18 @@ export default class HomePage extends Component {
                   </div>
               }
 
-                    <div className="row">
-                        <div className="col-xs-12 col-sm-6 col-md-offset-3">
-                                <h1>What is FestiPals?</h1>
-                                <p>This is the website where you can make your own schedule for the Roskilde Festival. It helps you make your own timeschedule and see the concerts your friends are attending. Don&rsquo;t miss any of your acts.</p>
-                        </div>
+                    <div className="row festiPalsDescription">
+                      <div className="col-xs-12 col-sm-6 col-md-offset-3">
+                        <h1>What is FestiPals?</h1>
+                        <p>FestiPals is a webapp for festival goers at Roskilde Festival who need to <strong>structure the concerts</strong> they want to see and <strong>organize their group of friends</strong> at the festival. <br />
+                          Festipals offers an overview of your friends and the acts you and the others want to go see, both before, but also during the festival for you to achieve the best festival experience possible.</p>
+                        <h3>Pals - What are they?</h3>
+                        <p>Pals are the way we call your friends on FestiPals. You can connect to your friends via a Facebook integration. <br />
+                        You will be able to see what acts your pals are planning to go to and can also <strong>invite pals</strong> to come see a concert with you.</p>
+                      <h3>Your schedule - How does this work?</h3>
+                        <p>Your schedule lets you save the acts you do not want to miss. It is <strong>structured by days</strong>, to help you keep an overview of every day at the festival.</p>
+                        <p><strong>Click on any act</strong> to see more details about the artist, aswell as your pals who are attending it.</p>
+                      </div>
                     </div>
             </div>
         </div>
