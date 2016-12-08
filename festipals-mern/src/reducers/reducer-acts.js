@@ -1,6 +1,8 @@
-import ActController from '../database/ActController';
+import getAllActs from '../database/actscontroller';
 
 export default function() {
+
+
   // return [
   //   {
   //     id: 1,
@@ -22,5 +24,5 @@ export default function() {
   //   }
   // ]
 
-  return ActController.getAllActs();
+  return getAllActs();
 }

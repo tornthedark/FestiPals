@@ -14,4 +14,4 @@ const actsSchema = new Schema({
   stage: { type: 'String', required: true },
 });
 
-export default mongoose.model('Act', actsSchema);
+export default mongoose.model('Post', actsSchema);
