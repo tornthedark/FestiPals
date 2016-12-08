@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 export default class HomePage extends Component {
   render() {
-    var loggedIn = true;
+    var loggedIn = false;
 
     return (
         <div>
@@ -38,10 +38,10 @@ export default class HomePage extends Component {
                  </div>
                 :  <div className="row">
                           <div className="col-xs-12 col-sm-3 col-md-offset-3">
-                                <button type="button" className="btn btn-primary btn-lg btn-block homePageButton">Log in</button>
+                                <Link to="logIn"><button type="button" className="btn btn-primary btn-lg btn-block homePageButton">Log in</button></Link>
                           </div>
                           <div className="col-xs-12 col-sm-3">
-                                <button type="button" className="btn btn-primary btn-lg btn-block homePageButton">Sign up</button>
+                                <Link to="signUp"><button type="button" className="btn btn-primary btn-lg btn-block homePageButton">Sign up</button></Link>
                           </div>
                   </div>
               }
