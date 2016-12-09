@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
 
 export default class ActsSorter extends Component {
+  constructor(props) {
+    super();
+    this.state = {daysButtonCollapsed: true}
+    this.state = {sortButtonCollapsed: true}
+  }
+
+  onCollapse(event) {
+    if(this.state.daysButtonCollapsed || this.state.sortButtonCollapsed) {
+      this.setState({daysButtonCollapsed: false});
+      this.setState({sortButtonCollapsed: false});
+    }
+
+
+  }
+
   render() {
     return (
       <div>
@@ -8,7 +23,7 @@ export default class ActsSorter extends Component {
         <div className="btn-group input-group btn-group-justified col-xs-12">
           <div className="btn-group">
             <button type="button" className="btn btn-default" data-toggle="collapse"
-              href="#actsDays" aria-expanded="false" aria-controls="actsDays">
+              href="#actsDays" aria-expanded="false" aria-controls="actsDays" >
               <span className="fa fa-calendar-o fa-3x" aria-hidden="true"></span>
               <h3>Days</h3>
             </button>
@@ -22,7 +37,7 @@ export default class ActsSorter extends Component {
           </div>
           <div className="btn-group">
             <button type="button" className="btn btn-default">
-              <span className="fa fa-times fa-3x" aria-hidden="true"></span>
+              <span className="fa fa-times fa-3x" aria-hidden="true" onClick={this.onCollapse.bind(this)}></span>
               <h3>Reset</h3>
             </button>
           </div>
