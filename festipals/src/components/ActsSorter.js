@@ -26,7 +26,7 @@ export default class ActsSorter extends Component {
           <div className="panel panel-default">
             <div className="panel-body">
               <h3>Select Days</h3>
-              <select className="selectpicker">
+              <select className="dropdown">
                 <option>Monday ##/## 2017</option>
                 <option>Tuesday ##/## 2017</option>
                 <option>Wednesday ##/## 2017</option>
@@ -46,14 +46,13 @@ export default class ActsSorter extends Component {
                 <span className="fa fa-globe fa-3x" aria-hidden="true"></span>
                 <h3>Country</h3>
               </button>
-              <button type="button" className="btn btn-default" data-toggle="collapse"
-              href="#actsSorterButtons" aria-expanded="false" aria-controls="actsSorterButtons">
-              <span className="fa fa-home fa-3x" aria-hidden="true"></span>
-              <h3>Filtering</h3>
+              <button type="button" className="btn btn-default">
+                <span className="fa fa-home fa-3x" aria-hidden="true"></span>
+                <h3>Stage</h3>
               </button>
               <button type="button" className="btn btn-default">
-                <span className="fa fa-times fa-3x" aria-hidden="true"></span>
-                <h3>Reset</h3>
+                <span className="fa fa-sort-alpha-asc fa-3x" aria-hidden="true"></span>
+                <h3>Name</h3>
               </button>
             </div>
           </div>
