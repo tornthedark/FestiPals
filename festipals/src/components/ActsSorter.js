@@ -3,17 +3,7 @@ import React, { Component } from 'react';
 export default class ActsSorter extends Component {
   constructor(props) {
     super();
-    this.state = {daysButtonCollapsed: true}
-    this.state = {sortButtonCollapsed: true}
-  }
-
-  onCollapse(event) {
-    if(this.state.daysButtonCollapsed || this.state.sortButtonCollapsed) {
-      this.setState({daysButtonCollapsed: false});
-      this.setState({sortButtonCollapsed: false});
-    }
-
-
+    this.state = {collapsed: true}
   }
 
   render() {
@@ -22,23 +12,17 @@ export default class ActsSorter extends Component {
       <div className="container">
         <div className="btn-group input-group btn-group-justified col-xs-12">
           <div className="btn-group">
-            <button type="button" className="btn btn-default" data-toggle="collapse"
-              href="#actsDays" aria-expanded="false" aria-controls="actsDays" >
+            <button type="button" className="btn btn-default" data-toggle="collapse" data-parent="#myAccordion"
+              href="#actsDays" aria-expanded="false" aria-controls="actsDays">
               <span className="fa fa-calendar-o fa-3x" aria-hidden="true"></span>
               <h3>Days</h3>
             </button>
           </div>
           <div className="btn-group">
-            <button type="button" className="btn btn-default" data-toggle="collapse"
+            <button type="button" className="btn btn-default" data-toggle="collapse" data-parent="#myAccordion"
             href="#actsSorterButtons" aria-expanded="false" aria-controls="actsSorterButtons">
               <span className="fa fa-clone fa-rotate-270 fa-3x" aria-hidden="true"></span>
               <h3>Filtering</h3>
-            </button>
-          </div>
-          <div className="btn-group">
-            <button type="button" className="btn btn-default">
-              <span className="fa fa-times fa-3x" aria-hidden="true" onClick={this.onCollapse.bind(this)}></span>
-              <h3>Reset</h3>
             </button>
           </div>
         </div>
@@ -76,15 +60,14 @@ export default class ActsSorter extends Component {
                   <h3>Stage</h3>
                 </button>
               </div>
-              <div className="btn-group">
-                <button type="button" className="btn btn-default">
-                  <span className="fa fa-sort-alpha-asc fa-3x" aria-hidden="true"></span>
-                  <h3>Name</h3>
-                </button>
-              </div>
             </div>
           </div>
         </div>
+        <a type="button" href="#" className="btn btn-block"
+        href="#actsSorterButtons" href="#actsDays"  data-toggle="collapse">
+        Reset all filtering for acts
+        </a>
+        <hr />
       </div>
       </div>
 
