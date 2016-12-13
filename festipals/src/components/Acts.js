@@ -50,7 +50,7 @@ export default class Acts extends Component {
                 <br />
                 <p>{description}</p>
                 {alreadyAdded
-                  ? <a type="button" className="btn btn-default col-xs-12">
+                  ? <a type="button" className="btn btn-default col-xs-12 alreadyAddedBtn">
                     <span className="glyphicon glyphicon-plus"></span> Add to my acts
                   </a>
                   : null
@@ -75,7 +75,11 @@ export default class Acts extends Component {
 
               </div>
               <div className="modal-footer">
-                <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+                {alreadyAdded
+                  ? null
+                  : <button type="button" className="btn btn-danger pull-left btn-lg"><i className="fa fa-trash"></i> Remove act</button>
+                }
+                <button type="button" className="btn btn-default btn-lg" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
