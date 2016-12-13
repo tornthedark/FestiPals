@@ -34,6 +34,7 @@ export default class ActsSorter extends Component {
           <div className="btn-group">
             <button type="button" className="btn btn-default" data-toggle="collapse"
               href="#actsDaysButtons" aria-expanded="false" aria-controls="actsDays" onClick={this.collapseDaysButtons.bind(this)}>
+
               <span className="fa fa-calendar-o fa-3x" aria-hidden="true"></span>
               <h3>Days</h3>
             </button>
@@ -47,7 +48,7 @@ export default class ActsSorter extends Component {
           </div>
         </div>
 
-        <div className={this.state.daysButtonsCollapsed} id="actsDaysButtons">
+       <div className={this.state.daysButtonsCollapsed} id="actsDaysButtons">
           <div className="panel panel-default">
             <div className="panel-body">
               <h3>Select Days</h3>
@@ -65,7 +66,8 @@ export default class ActsSorter extends Component {
           </div>
         </div>
 
-        <div className={this.state.sortButtonsCollapsed} id="actsSorterButtons">
+       <div className={this.state.sortButtonsCollapsed} id="actsSorterButtons">
+
           <div className="card card-block">
             <div className="btn-group input-group btn-group-justified col-xs-12">
               <div className="btn-group">
@@ -80,6 +82,16 @@ export default class ActsSorter extends Component {
                   <h3>Stage</h3>
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+        <a type="button" href="#" className="btn btn-block"
+        href="#actsSorterButtons" href="#actsDays"  data-toggle="collapse">
+        Reset all filtering for acts
+        </a>
+        <hr />
+      </div>
+      </div>
               <div className="btn-group">
                 <button type="button" className="btn btn-default">
                   <span className="fa fa-sort-alpha-asc  fa-3x" aria-hidden="true"></span>
