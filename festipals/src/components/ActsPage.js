@@ -3,6 +3,7 @@ import Acts from './Acts.js';
 import ActsSorter from './ActsSorter';
 import PageHeader from './PageHeader.js';
 import SampleDataActs from './../sampleData.json';
+import '../css/ActsPage.css';
 
 export default class ActsPage extends Component {
   render() {
@@ -11,7 +12,9 @@ export default class ActsPage extends Component {
       <div>
           <PageHeader icon="fa fa-music" title="Acts" description="(Click on an act to see more details)"/>
           <ActsSorter />
+          <hr />
           <div className="container">
+            <figure class="highlight figureBody">
         {/* looping through all the acts in the sample data file array to display the acts */}
           {SampleDataActs.acts.map(function (act) { return <Acts
                                                         key={act._id}
@@ -25,6 +28,7 @@ export default class ActsPage extends Component {
                                                         description={act.description}
                                                         attendingPals={attendingPals}
                                                       /> }) }
+              </figure>
         </div>
       </div>
     );
